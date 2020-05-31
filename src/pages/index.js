@@ -1,22 +1,40 @@
 import React from "react"
 import { Link } from "gatsby"
-
-import Layout from "../components/layout"
-import Image from "../components/image"
-import SEO from "../components/seo"
+import "../components/css/style.css"
 
 const IndexPage = () => (
-  <Layout>
-    <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
+  <>
+  <div className="proto-container">
+    <img className="img-fundo" src="https://image.freepik.com/fotos-gratis/amigos-batendo-os-punhos-como-um-trabalho-em-equipe_53876-70775.jpg"/>
+    
+  </div>
+  <div className="container">
+    <div className="inner">
+      <div className="left">
+      <img src="https://www.bancobmg.com.br/Site/Content/assets/img/logos/logo-bmg.svg" alt="CompleteUI Logo" className="logo"/>
+        <div className="content">
+          <h1>Venha fazer parte<span>do nosso time</span> </h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+            Nullam aliquam velit consequat, tempor nisi at, ornare odio.</p> 
+          <p className="light">
+            Suspendisse quis sapien nisl. Curabitur eget iaculis nulla. 
+            Suspendisse at lobortis est. Quisque pharetra quis mauris quis euismod. 
+            Praesent aliquet ultrices lectus, sit amet scelerisque nisl.</p>
+        </div>
+      </div>
+      <div className="right">
+        <button>Economizar</button>
+        <button>+Informações</button>
+
+      </div>
     </div>
-    <Link to="/page-2/">Go to page 2</Link> <br />
-    <Link to="/using-typescript/">Go to "Using TypeScript"</Link>
-  </Layout>
+  </div>
+  <div className="container">
+    <div className="box">
+      
+    </div>
+  </div>
+  </>
 )
 
 export default IndexPage

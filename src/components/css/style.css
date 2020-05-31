@@ -1,0 +1,177 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Montserrat';
+  background: #EEEEEE;
+  font-size: 18px;
+  height: 100vh;
+}
+
+.container {
+  margin: 0 auto;
+  text-align: center;
+}
+.container .logo {
+  width: 120px;
+  background-color: #FFF;
+  padding: 3%;
+  border-radius: 4px;
+}
+.container h1 {
+  margin: 1em 0;
+}
+.container p {
+  line-height: 1.7rem;
+}
+.container .left {
+  background: #f80;
+  padding: 1em;
+}
+.container .left p, .container .left h1 {
+  color: white;
+}
+.container .right p {
+  margin: 2em 0 1em;
+}
+.container .light {
+  color: rgba(255, 255, 255, 0.7) !important;
+  margin-top: 2em;
+}
+.container input, .container button {
+  width: calc(100% - 3em);
+  padding: .5em;
+  font-size: 1.3rem;
+  outline: none;
+  margin: 1em;
+}
+.container button {
+  width: calc(100% - 2em);
+  margin: 10;
+  background:transparent;
+  color: #f80;
+  border: solid 2px #f80;
+  cursor: pointer;
+  border-radius: 50px;
+}
+
+.attention {
+  width: 100%;
+  margin: .5em auto 0;
+  text-align: center;
+}
+.attention .me {
+  margin-top: 2em;
+  width: 3em;
+  border-radius: 50%;
+}
+.attention .arrow {
+  width: 15em;
+}
+
+@media only screen and (min-width: 768px) {
+  body {
+    font-size: 20px;
+  }
+
+  button {
+    width: 60% !important;
+  }
+
+  input {
+    width: calc(60% - 1em) !important;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .logo {
+    margin: 1em 0;
+  }
+
+  p {
+    line-height: 1.7em !important;
+  }
+
+  .inner {
+    display: grid;
+    grid-template-columns: 55% auto;
+  }
+  .inner .left {
+    text-align: left;
+    padding: 0 2em;
+    height: 100vh;
+    display: grid;
+  }
+  .inner .left .content {
+    padding: 0 3em;
+  }
+  .inner .left h1 {
+    margin: 0;
+    font-size: 2.4em;
+  }
+  .inner .left h1 span {
+    display: block;
+  }
+  .inner .right {
+    text-align: right;
+    align-self: center;
+    padding: 0 2em 1.5em;
+    justify-self: center;
+  }
+  .inner .right input {
+    width: 100% !important;
+    margin: 1em 0;
+  }
+  .inner .right button {
+    width: 100% !important;
+  }
+
+  .proto-container {
+    clip-path: inset(0 45% 0 0);
+    position: absolute;
+    top: 20%;
+    height: 70%;
+    z-index: 0;
+    width: 100%;
+    pointer-events: none;
+  }
+  @media only screen and (max-width: 480px){
+    .img-fundo{
+        position: absolute;
+        width: 100%;
+        opacity: 0.1;
+      } 
+  }
+  .box{
+      min-height: 500px;
+      background-color: #ccc;
+  }
+  .img-fundo{
+    position: absolute;
+    width: 55%;
+    opacity: 0.1;
+  }
+  .proto-container .proto {
+    border: 3px solid rgba(255, 255, 255, 0.1);
+    width: 19%;
+    height: 80%;
+    float: left;
+    margin-left: 1em;
+    transform: translateX(10%);
+  }
+}
+@media only screen and (min-width: 1600px) {
+  body {
+    font-size: 22px;
+  }
+
+  .content {
+    padding: 0 6em !important;
+  }
+
+  .right {
+    padding: 0 !important;
+  }
+}
